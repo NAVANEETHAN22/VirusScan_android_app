@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    tools:context=".StartActivity">
+
+    <Button
+        android:id="@+id/startButton"
+        android:layout_width="300dp"
+        android:layout_height="69dp"
+        android:layout_below="@id/appInfoTextView"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="540dp"
+        android:layout_marginRight="2550dp"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp"
+        android:onClick="startScan"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:text="Start Scan"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        tools:ignore="UnknownId" />
+
+</RelativeLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="@drawable/background2"
+    android:gravity="center"
+    tools:context=".SQLInjectionActivity">
+
+    <!-- EditText to input SQL query -->
+    <EditText
+        android:id="@+id/sqlQueryEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:hint="Enter SQL Query"
+        android:inputType="text"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/dark_black" />
+
+    <!-- Button to scan SQL injection -->
+    <Button
+        android:id="@+id/scanSqlInjectionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sqlQueryEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:text="Scan SQL Injection"
+        android:background="@drawable/rounded_button"
+        android:elevation="4dp"
+        android:paddingStart="24dp"
+        android:paddingEnd="24dp"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <!-- White background for the scan result TextView -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/scanSqlInjectionButton"
+        android:layout_marginTop="20dp"
+        android:background="#FFFFFF">
+
+        <!-- TextView to display scan result -->
+        <TextView
+            android:id="@+id/scanResultTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp" />
+    </FrameLayout>
+</RelativeLayout>
